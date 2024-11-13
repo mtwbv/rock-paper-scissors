@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=M+PLUS+2:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="one">
+        <div id="box-2">
+            <div id="player-results">
+                <p>YOU</p>
+                <p id="wins">0</p>
+                <p style="    font-weight: 1000;         margin-block-start: -0.5em;">. .</p>
+                <p id="losses">0</p>
+                <p>PC</p>
+
+            </div>
+            <div id="pc-choise">
+                <p id="result"></p>
+                <img id="computerChoice" class="img-pc"></img>
+            </div>
+        </div>
+
+    </section>
+    <section id="three">
+        <div id="play-area">
+            <div id="box">
+                <div id="first-row">
+                    <div id="left-button" onclick="play('rock')"><img id="rock-img" src="1.png"></div>
+                    <div id="right-button" onclick="play('paper')"><img id="rock-img" src="2.png"></div>
+                </div>
+                <div id="second-row">
+                    <div id="center-button" onclick="play('scissors')"><img id="rock-img" src="3.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  
+    
+    
+
+   
+    
+   
+    
+     -->
+
+
+    <script src="javascript.js"></script>
+
+</html>
