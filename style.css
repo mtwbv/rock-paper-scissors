@@ -141,16 +141,23 @@ body {
     background-color: #10414f;
 }
 
-#left-button:active {
+#left-button:active,
+#left-button:focus {
     transform: scale(0.88);
+    background-color: #0d3540;
 }
 
-#right-button:active {
+#right-button:active,
+#right-button:focus {
     transform: scale(0.88);
+    background-color: #0d3540;
 }
 
-#center-button:active {
+#center-button:active,
+#center-button:focus {
     transform: scale(0.88);
+    background-color: #0d3540;
+
 }
 
 #left-button {
