@@ -26,8 +26,8 @@ function play(userChoice) {
         case "You lose!":
             losses++;
             lossesDisplay.textContent = `${losses}`;
-            document.getElementById("pc-choice").style.boxShadow = "0px 0px 100px #b42323";
-            document.getElementById("pc-choice").style.backgroundColor = "#b42323";
+            document.getElementById("pc-choice").style.boxShadow = "0px 0px 100px #b43823";
+            document.getElementById("pc-choice").style.backgroundColor = "#b43823";
             break;
         case "It's a tie!":
             ties++;
