@@ -31,9 +31,8 @@ function play(userChoice) {
             break;
         case "It's a tie!":
             ties++;
-            tiesDisplay.textContent = `${ties}`;
-            document.getElementById("pc-choise").style.boxShadow = "0px 0px 100px #d1d43c";
-            document.getElementById("pc-choise").style.backgroundColor = "#d1d43c";
+            document.getElementById("pc-choise").style.boxShadow = "0px 0px 100px #c0c337";
+            document.getElementById("pc-choise").style.backgroundColor = "#c0c337";
            
             break;
     }
