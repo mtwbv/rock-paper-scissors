@@ -30,6 +30,11 @@ body {
     padding: 0rem 1rem;
 }
 
+#game-result {
+    font-size: 26px;
+
+}
+
 #pc-choice {
     background-color: #6e9d50;
     width: 100%;
