@@ -35,8 +35,8 @@ function play(userChoice) {
             document.getElementById("pc-choice").style.backgroundColor = "#b8bb21";
             break;
     }
-    if(losses > 30){
-        alert(`You're LOX, PC:${losses}`);
+    if(losses > 20){
+        alert(`You're LOX, PC: ${losses}`);
     }
 }
 
