@@ -1,8 +1,9 @@
-const resultDisplay = document.getElementById("result");
-const winsDisplay = document.getElementById("wins");
-const lossesDisplay = document.getElementById("losses");
-const tiesDisplay = document.getElementById("ties");
-const computerChoiceDisplay = document.getElementById("computerChoice");
+// Updated ID names for better clarity
+const resultDisplay = document.getElementById("game-result");
+const winsDisplay = document.getElementById("player-wins");
+const lossesDisplay = document.getElementById("pc-losses");
+const tiesDisplay = document.getElementById("ties");  // Assuming there's an HTML element with id "ties" for ties count
+const computerChoiceDisplay = document.getElementById("computer-choice-img");
 
 let wins = 0;
 let losses = 0;
@@ -19,21 +20,19 @@ function play(userChoice) {
         case "You win!":
             wins++;
             winsDisplay.textContent = `${wins}`;
-            document.getElementById("pc-choise").style.backgroundColor = "#459b42";
-            document.getElementById("pc-choise").style.boxShadow = "0px 0px 100px #459b42";
+            document.getElementById("pc-choice").style.backgroundColor = "#459b42";
+            document.getElementById("pc-choice").style.boxShadow = "0px 0px 100px #459b42";
             break;
         case "You lose!":
             losses++;
             lossesDisplay.textContent = `${losses}`;
-            document.getElementById("pc-choise").style.boxShadow = "0px 0px 100px #b42323";
-            document.getElementById("pc-choise").style.backgroundColor = "#b42323";
-
+            document.getElementById("pc-choice").style.boxShadow = "0px 0px 100px #b42323";
+            document.getElementById("pc-choice").style.backgroundColor = "#b42323";
             break;
         case "It's a tie!":
             ties++;
-            document.getElementById("pc-choise").style.boxShadow = "0px 0px 100px #c0c337";
-            document.getElementById("pc-choise").style.backgroundColor = "#c0c337";
-           
+            document.getElementById("pc-choice").style.boxShadow = "0px 0px 100px #b8bb21";
+            document.getElementById("pc-choice").style.backgroundColor = "#b8bb21";
             break;
     }
 }
@@ -41,19 +40,16 @@ function play(userChoice) {
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length);
-    console.log(randomIndex);
-if (randomIndex == 0){
-    document.getElementById("computerChoice").src="1.png";
-    
-}
-else if (randomIndex == 1){
-    document.getElementById("computerChoice").src="2.png";
-}
-else if (randomIndex == 2){
-    document.getElementById("computerChoice").src="3.png";
-}
+
+    if (randomIndex == 0) {
+        document.getElementById("computer-choice-img").src = "1.png";
+    } else if (randomIndex == 1) {
+        document.getElementById("computer-choice-img").src = "2.png";
+    } else if (randomIndex == 2) {
+        document.getElementById("computer-choice-img").src = "3.png";
+    }
     return choices[randomIndex];
-  }
+}
 
 function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
@@ -64,7 +60,6 @@ function determineWinner(userChoice, computerChoice) {
         rock: "paper",
         paper: "scissors",
         scissors: "rock"
-
     };
 
     return userChoice === winningConditions[computerChoice] ? "You win!" : "You lose!";

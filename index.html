@@ -14,55 +14,40 @@
 </head>
 
 <body>
-
-
-
-    <section id="one">
-        <div id="box-2">
-            <div id="player-results">
+    <section id="game-scoreboard">
+        <div id="score-container">
+            <div id="player-stats">
                 <div class="counter">
                     <p>YOU</p>
-                    <p id="wins" style=" color: #000000;">0</p>
+                    <p id="player-wins" style="color: #000000;">0</p>
                 </div>
-                <p style="    font-weight: 1000;         margin-block-start: -0.5em;">. .</p>
-                <p id="losses">0</p>
+                <p style="font-weight: 1000; margin-block-start: -0.5em;">. .</p>
+                <p id="pc-losses">0</p>
                 <p>PC</p>
-
             </div>
-            <div id="pc-choise">
-                <p id="result"></p>
-                <img id="computerChoice" class="img-pc"></img>
-            </div>
-        </div>
-
-    </section>
-    <section id="three">
-        <div id="play-area">
-            <div id="box">
-                <div id="first-row">
-                    <div tabindex="0" id="left-button" onclick="play('rock')"><img id="rock-img" src="1.png"></div>
-                    <div tabindex="0" id="right-button" onclick="play('paper')"><img id="rock-img" src="2.png">
-                    </div>
-                </div>
-                <div id="second-row">
-                    <div tabindex="0" id="center-button" onclick="play('scissors')"><img id="rock-img" src="3.png">
-                    </div>
-                </div>
+            <div id="pc-choice">
+                <p id="game-result"></p>
+                <img id="computer-choice-img" class="img-pc"></img>
             </div>
         </div>
     </section>
 
-
-    <!--  
-    
-    
-
-   
-    
-   
-    
-     -->
-
+    <section id="play-section">
+        <div id="game-area">
+            <div id="button-container">
+                <div id="top-row">
+                    <div tabindex="0" id="rock-button" onclick="play('rock')"><img id="rock-img" src="1.png"></div>
+                    <div tabindex="0" id="paper-button" onclick="play('paper')"><img id="paper-img" src="2.png">
+                    </div>
+                </div>
+                <div id="bottom-row">
+                    <div tabindex="0" id="scissors-button" onclick="play('scissors')"><img id="scissors-img"
+                            src="3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="javascript.js"></script>
 
